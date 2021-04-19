@@ -20,7 +20,10 @@ section {
 	align-items: center;
 	justify-content: center;
 	padding: 100px 0;
-	background-color: black;
+	/*background-image: url("food-blue.jpg");*/
+	background-image: url("food-white.jpg");
+	background-size: cover;
+	background-position: center;
 }
 .container {
 	width: 90%;
@@ -33,6 +36,7 @@ section {
 	font-size: 4rem;
 	color: darkgoldenrod;
 	margin-bottom: 30px;
+	font-family: 'Lato', sans-serif;
 }
 form {
 	width: 90%;
@@ -64,13 +68,17 @@ form ion-icon {
 	display: grid;
 	grid-gap: 25px;
 	grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+	background-image: url("food-blue.jpg");
+	background-size: cover;
+	background-position: center;
 }
 .item {
 	width: 100%;
 	border-radius: 8px;
-	background-color: royalblue;
+	background-color: white;
 	padding: 20px;
 	overflow: hidden;
+	border: 1px solid blanchedalmond;
 }
 .item img {
 	width: 100%;
@@ -95,11 +103,14 @@ form ion-icon {
 	cursor: pointer;
 	width: 130px;
 	padding: 10px 0;
-	background-color: seagreen;
-	color: black;
-	font-size: 1.4rem;
+	color: burlywood;
 	margin-top: 20px;
 	align-self: flex-start;
+	border-radius: 2px;
+	border: 1px solid rgb(214 224 54);
+	font-family: 'OpenSans', sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
 }
 .item-data {
 	margin-top: 10px;

@@ -1,6 +1,7 @@
 const searchForm = document.querySelector('form');
 const searchResult = document.querySelector('.search-result');
 const container = document.querySelector('.container');
+const btn = document.querySelector('.btnSearch');
 let searchQuery = '';
 const APP_ID = 'c68077ad';
 const APP_Key = '62e16dfbc48c7674a8f2a41a5a20128f';
@@ -19,6 +20,7 @@ async function fetchApi() {
 
 	console.log(data);
 }
+
 function generateHTML(results) {
 	let generetedHTML = '';
 	results.map((result) => {
@@ -26,8 +28,8 @@ function generateHTML(results) {
 		<div class="item">
                     <img src="${result.recipe.image}"tiramisu.jpeg" alt="">
                     <div class="flex-container">
-                        <h2>${result.recipe.label}</h2>
-                        <a class="view-button"  href="${result.recipe.url} target="_blank">View recipe</a>     
+                        <h2 class="title">${result.recipe.label}</h2>
+                        <a class="view-button"  href="${result.recipe.url}" target="_blank">View recipe</a>     
                     </div>
                      <p class="item-data">Calories:${result.recipe.calories.toFixed(2)}</p>  
                 </div>  
