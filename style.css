@@ -13,7 +13,7 @@ html {
 	font-size: 12px;
 	font-weight: 600;
 }
-section {
+#section-home {
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
@@ -23,6 +23,18 @@ section {
 	/*background-image: url("food-blue.jpg");*/
 	background-image: url("food-white.jpg");
 	background-size: cover;
+	background-position: center;
+}
+#section-search {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px 0;
+	/*background-image: url("food-blue.jpg");*/
+	background-image: url("dose-juice-sTPy-oeA3h0-unsplash.jpg");
+	background-size: contain;
 	background-position: center;
 }
 .container {
@@ -68,9 +80,6 @@ form ion-icon {
 	display: grid;
 	grid-gap: 25px;
 	grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
-	background-image: url("food-blue.jpg");
-	background-size: cover;
-	background-position: center;
 }
 .item {
 	width: 100%;
