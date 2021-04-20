@@ -20,7 +20,7 @@ html {
 	align-items: center;
 	justify-content: center;
 	padding: 100px 0;
-	background-image: url("brooke-lark-08bOYnH_r_E-unsplash.jpg");
+	background-image: url("ella-olsson-rD3YrnhTmf0-unsplash.jpg");
 	/*background-image: url("food-white.jpg");*/
 	background-size: cover;
 	background-position: initial;
@@ -53,11 +53,7 @@ button {
 	border-radius: 4px;
 	background-color: lemonchiffon;
 }
-@media (min-width: 1200px) {
-	#title-home {
-		background-color: transparent;
-	}
-}
+
 #section-search {
 	min-height: 100vh;
 	width: 100%;
@@ -74,6 +70,9 @@ button {
 	height: auto;
 	max-width: 1200px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .brand {
 	text-align: center;
@@ -82,7 +81,8 @@ button {
 	margin-bottom: 30px;
 	font-family: 'Lato', sans-serif;
 	background-color: #ffffffe3;
-	padding: 4px;
+	padding: 8px;
+	width: fit-content;
 }
 form {
 	width: 90%;
